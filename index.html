@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>金财核算</title>
+    <script type="text/javascript">
+      var url = window.location.href
+      if(url.indexOf('#')!=-1 && url.indexOf('#/purchaseBuy')==-1){
+        console.log('包含')
+        window.location.href = 'index.html'
+      }
+    </script>
+    <script src="./static/config.js"></script>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_694652_nr3jx2yzlvn.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+
+  <script type="text/javascript">
+  (function() {
+      var hostArr = (window.location.host).split('.')
+      var arr = ['39','172','ysx','www','jz','dz']
+      var area = ''
+      if(arr.indexOf(hostArr[0])!=-1 || hostArr.length==1){
+        area = 'jzf'
+      }else{
+        area = hostArr[0]
+      }
+
+      var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+      link.type = 'image/x-icon';
+      link.rel = 'shortcut icon';
+      link.href = './static/images/'+area+'-favicon.ico';
+      document.getElementsByTagName('head')[0].appendChild(link);
+  })();
+</script>
+</html>

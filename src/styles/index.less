@@ -1,0 +1,138 @@
+@import './variables.less';
+@import './mixin.less';
+@import './transition.less';
+@import './element-ui.less';
+@import './sidebar.less';
+
+@font-face {
+  font-family: 'iconfont';  /* project id 854248 */
+  src: url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.eot');
+  src: url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.woff') format('woff'),
+  url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+}
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: PingFangSC-Regular,sans-serif,Microsoft YaHei,'微软雅黑';
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+  background-color: #FAFBFD;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  min-height: 100%
+}
+
+b{
+  font-weight: normal;
+}
+span{
+  font-size:14px
+}
+.app-container {
+  padding: 20px;
+}
+
+//表单头部样式
+.setDate{
+  float: left;
+}
+.setDateText{
+  float: left;
+  padding: 0 10px;
+}
+.width160{
+  width: 160px;
+}
+.width90{
+  width: 90px;
+}
+//公共按钮输入框高度
+.app-button{
+  height: 32px;
+  margin: 10px;
+}
+//公共title样式
+.app-title{
+  width: 100%;
+  padding-left: 10px;
+  margin: 12px 0;
+  border-left: 4px solid #4da2ff;
+  color: #606266;
+  line-height: 40px;
+  font-size:14px;
+}
+//公共头
+.main-title{
+  border:1px solid #ebeef5;
+}
+//表格表头公共样式
+// .table-title{
+//   font-size:14px;
+
+// }

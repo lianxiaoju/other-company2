@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>支付成功</title>
+    <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_854248_b1ypdn7jhc.css"> -->
+  </head>
+  <body>
+    <div class='successcontent'>
+        <div> 
+            <!-- <i class='iconfont icon-dui paysuccess'>&#xe614;</i> -->
+            <img src='./dui.png'>
+            <span class='payfont'>支付成功</span>
+        </div>
+        
+    </div> 
+  </body>
+</html>
+<style>
+    
+@font-face {
+  font-family: 'iconfont';  /* project id 854248 */
+  src: url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.eot');
+  src: url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.woff') format('woff'),
+  url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_854248_b1ypdn7jhc.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+}
+    html{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+    }
+    .successcontent{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background: white;
+    height: 100%;
+    
+}
+.paysuccess{
+    color:#67C23A;
+    font-size:78px;
+    display: block;
+}
+.payfont{
+    font-family: PingFangHK-Regular;
+    font-size: 14px;
+    color: #606266;
+    letter-spacing: 0;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+</style>
+<script>
+    window.onload=function(){
+        setTimeout(function(){
+                 window.close();
+            },3000)
+    }
+</script>

@@ -1,0 +1,283 @@
+ //to reset element-ui default css
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-height: 90%;
+  margin-top: 0!important;
+  margin-bottom:0;
+  flex-direction: column;
+  display: flex;
+  // transform: none;
+  // left: 0;
+  // position: relative;
+  // margin: 0 auto;
+  //统一控制dialog弹窗样式
+  .el-dialog__header{
+    padding: 0 20px;
+    .el-dialog__title{
+      font-size:14px;
+      line-height: 40px;
+      height: 39px;
+      display: block;
+      color: @baseColor;
+      border-bottom: 1px solid @borderColor;
+    }
+    .el-dialog__headerbtn{
+      top: 12px;
+      right: 17px;
+    }
+  }
+  .el-dialog__body{
+    padding: 20px;
+    overflow: auto;
+
+  }
+  .el-dialog__footer{
+    padding-top:0;
+  }
+}
+
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// 覆盖element ui样式
+.zt-select {
+  .el-input__inner{
+    border: none;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    padding-right: 25px;
+    padding-left: 10px;
+  }
+  .el-icon-arrow-up{
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    font-smoothing: antialiased;
+    &:before{
+      content: "\e7f2";
+      color: @baseColor
+    }
+  }
+  .el-input__prefix{
+    right: 0;
+    left: inherit;
+  }
+}
+
+.back-work-btn i{
+  margin-right: 5px;
+}
+.menu-wrapper{
+  .el-icon-arrow-down{
+    margin-top: -6px;
+  //   font-family: "iconfont" !important;
+    font-size: 14px;
+  //   font-style: normal;
+  //   font-smoothing: antialiased;
+  //   color: #ccc;
+  //   &:before{
+  //     content: "\e7f3";
+  //   }
+  // }
+  // .el-submenu.is-opened>.el-submenu__title .el-submenu__icon-arrow {
+  //     transform: rotateZ(90deg);
+  }
+}
+//更改 element UI 侧边栏的字体大小和选中的时候的样式
+.el-submenu__title, .el-menu-item{
+  border-radius:0 !important;
+  font-size: 14px !important;
+}
+.el-tabs__item{
+  width: 90px;
+  text-align: center; 
+  height: 38px;
+  line-height: 38px;
+  margin-top:5px;
+  border-radius: 4px 4px 0 0;
+}
+.el-tabs--border-card>.el-tabs__header .el-tabs__item{
+  margin-left: 0;
+}
+.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active{
+  border-top-color: #dcdfe6;
+  // margin-left: 0;
+}
+//更改element ui 选中的时候字体颜色
+.el-tabs__item.is-active{
+  color: #606266;
+}
+//更改elment ui  下划线的颜色
+.el-tabs__active-bar{
+  background-color: #FFC700;
+  height:3px;
+  // left:30px;
+  width: 188px !important;
+}
+//更改element ui tab
+.el-tabs__nav.is-stretch{
+  padding-bottom: 20px;
+}
+//更改elmeng ui 间距
+.el-tabs__nav-wrap{
+  padding-left: 10px;
+}
+//更改侧边栏
+.el-submenu .el-menu-item span{
+  border-bottom:none !important;
+  font-size:12px;
+}
+//更改侧边栏二级的背景
+// .el-submenu .el-menu{
+//   background-color: #000 !important;
+// }
+//更改区域框的长度
+.el-textarea__inner{
+  height: 70px;
+}
+//卡片padding
+.el-card__header{
+  padding:0 !important;
+}
+.el-card.is-always-shadow{
+  box-shadow:none !important;
+}
+.el-table-left  th.is-center{
+  text-align:left !important;
+}
+.elfdfd{
+  background: red
+}
+.el-form--inline .el-form-item{
+  margin-right: 0;
+}
+.el-form-item{
+  margin-bottom:10px
+}
+.ele-dialog-width{
+  width:700px;
+  height: auto;
+  // height: 542px;
+}
+.ele-change-width{
+  width: 800px;
+  // height: 640px;
+}
+.el-menu-item.is-active{
+  color:@selectColor !important;
+  background:@baseColor !important;
+}
+
+// .el-input--small .el-input__inner{
+//   width: 174px;
+// }
+label{
+  font-weight: normal !important;
+}
+.el-table{
+  font-size:14px !important;
+}
+.el-table thead{
+  font-weight: normal;
+}
+.el-tabs__nav{
+  margin-top:5px;
+}
+.el-form-item__label{
+  padding:0 !important;
+}
+// .el-table .cell{
+//   padding-left:0 !important;
+// }
+.el-message{
+  top:50%;
+  margin-top:-48px;
+}
+
+.el-table th, .el-table tr {
+  background: none;
+}
+.el-class_table_header{
+  background:#f7f7f7 !important;
+  color: #fff !important;
+}
+
+.el-class_active-h1{
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    line-height: 42px;
+    background: #F7F7F7;
+    border-left: 5px solid #409EFF;
+    padding-left: 15px;
+    font-weight: normal;
+    text-align: left;
+    color: #606266;
+}
+
+.el-class_active-spanTitle{
+  width: 100%;
+  padding-left: 10px;
+  // margin: 20px 0;
+  margin: 20px 0;
+  border-left: 5px solid #4da2ff;
+  color: #606266;
+  line-height: 40px;
+  font-size: 14px;
+}
+.el-button{
+  font-size:14px;
+  padding:8px 12px;
+}
+.el-tabs--border-card{
+  height: 100%;
+  padding: 0;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+.el-tabs__content{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.el-table__body-wrapper{
+  height: 100%;
+}
+.el-tab-pane{
+  height: 100%;
+  width: 100%;
+}
+.el-table__body .el-button{
+  padding:0
+}
+.el-tabs--border-card>.el-tabs__header .el-tabs__item{
+  color:#303133
+}
+.el-table td.gutter, .el-table th.gutter{
+  background: rgb(247,247,247)
+}
